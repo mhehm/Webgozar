@@ -3,15 +3,14 @@
  * @package     Joomla.Site
  * @subpackage  mod_webgozar
  *
- * @copyright   Copyright (C) 2014 Open Source Matters, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2014 - 2015 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 defined('_JEXEC') or die;
 
-if ($code) :
 ?>
-<div align="center" class="webgozar<?php echo $moduleclass_sfx; ?>">
+<div align="center" id="webgozar_<?php echo $module->id; ?>" class="webgozar<?php echo $moduleclass_sfx; ?>">
 <?php
 switch ($type)
 {
@@ -30,12 +29,12 @@ switch ($type)
 <form action="http://www.webgozar.com/nletter/join.aspx" target="_blank" onsubmit="return sp(this);" name="wfrm" method="post">
 	<fieldset>
 		<input type="hidden" value="<?php echo $code; ?>" name="code">
-		<input type="text" class="txts" name="wgname" placeholder="<?php echo JText::_('MOD_WEBGOZAR_NAME'); ?>">
+		<input type="text" class="txts input-medium" name="wgname" placeholder="<?php echo JText::_('MOD_WEBGOZAR_NAME'); ?>">
 		<?php if ($newsletterLayout == 'v') echo '<br />'; ?>
-		<input type="text" class="txts" name="wgemail" dir="ltr" placeholder="<?php echo JText::_('MOD_WEBGOZAR_EMAIL'); ?>">
+		<input type="text" class="txts input-medium" name="wgemail" dir="ltr" placeholder="<?php echo JText::_('MOD_WEBGOZAR_EMAIL'); ?>">
 		<?php if ($newsletterLayout == 'v') echo '<br />'; ?>
-		<button name="R1" type="submit" value="1" class="btn btn-primary"><?php echo JText::_('MOD_WEBGOZAR_SUBSCRIBE'); ?></button>
-		<button name="R1" type="submit" value="0" class="btn btn-inverse"><?php echo JText::_('MOD_WEBGOZAR_UNSUBSCRIBE'); ?></button>
+		<button name="R1" type="submit" value="1" class="btn btn-small btn-primary"><?php echo JText::_('MOD_WEBGOZAR_SUBSCRIBE'); ?></button>
+		<button name="R1" type="submit" value="0" class="btn btn-small btn-inverse"><?php echo JText::_('MOD_WEBGOZAR_UNSUBSCRIBE'); ?></button>
 		<script language="javascript" src="http://webgozar.ir/scs/n2.js"></script>
 		<script language="vbscript" src="http://webgozar.ir/scs/n1.vbs"></script>
 	</fieldset>
@@ -45,4 +44,3 @@ switch ($type)
 }
 ?>
 </div>
-<?php endif; ?>

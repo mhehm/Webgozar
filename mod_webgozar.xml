@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension
-	type="module"
-	version="3.1"
-	client="site"
-	method="upgrade">
+<extension type="module" version="3.1" client="site" method="upgrade">
 	<name>mod_webgozar</name>
 	<author>Mohammad Hasani Eghtedar</author>
 	<creationDate>January 2014</creationDate>
-	<copyright>Copyright (C) 2014 Open Source Matters. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2014 - 2015 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>m.h.eghtedar@gmail.com</authorEmail>
-	<authorUrl>www.behineweb.com</authorUrl>
-	<version>1.0.0</version>
+	<authorUrl>www.mhehm.ir</authorUrl>
+	<version>1.0.1</version>
 	<description>MOD_WEBGOZAR_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_webgozar">mod_webgozar.php</filename>
 		<folder>tmpl</folder>
-		<filename>index.html</filename>
 		<filename>mod_webgozar.xml</filename>
 	</files>
 	<languages folder="language">
@@ -50,6 +45,7 @@
 					name="counter"
 					type="radio"
 					default="1"
+					showon="type:counter"
 					class="btn-group"
 					label="MOD_WEBGOZAR_FIELD_COUNTER_LABEL"
 					description="MOD_WEBGOZAR_FIELD_COUNTER_DESC">
@@ -60,6 +56,7 @@
 					name="newsletter"
 					type="radio"
 					default="v"
+					showon="type:newsletter"
 					class="btn-group"
 					label="MOD_WEBGOZAR_FIELD_NEWSLETTER_LABEL"
 					description="MOD_WEBGOZAR_FIELD_NEWSLETTER_DESC">

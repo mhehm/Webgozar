@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jedupdate version="1">
+	<core_body>
+The module "Webgozar" allows you to insert JS-code of popular iranian counter known as Webgozar (www.webgozar.com) on Joomla web pages. 
+
+Webgozar - a tool to assess site traffic & visitor behavior analysis.
+
+With this module you can add other webgozar tools like newsletter & poll to your joomla site too.
+	</core_body>
+	
+	<!-- valid links only or leave blank -->
+	<homepage_link>https://github.com/mhehm/Webgozar</homepage_link>
+	<download_link>https://github.com/mhehm/Webgozar/releases</download_link>
+	<demo_link>http://www.webgozar.com/</demo_link>
+	<documentation_link>https://github.com/mhehm/Webgozar/wiki</documentation_link>
+	<support_link>https://github.com/mhehm/Webgozar/issues</support_link>
+	<license_link></license_link>
+
+	<version>1.0.1</version>
+
+	<compatibility>
+		<version>25</version>
+		<version>30</version>
+	</compatibility>
+</jedupdate>
